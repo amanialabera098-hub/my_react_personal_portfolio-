@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "prebuild": "node -e \"require.resolve('vite/package.json')\" || npm ci --no-audit --no-fund",
     "build": "vite build",
     "dev": "vite --open"
   },
